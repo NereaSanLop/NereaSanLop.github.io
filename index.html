@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
+    <main>
+        <p>Esta es una página web básica con HTML, CSS y JavaScript.</p>
+        <button id="miBoton">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </main>
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+            document.getElementById("mensaje").textContent = "¡Has hecho clic en el botón!";
+        });
+    </script>
+</body>
+</html>
