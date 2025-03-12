@@ -10,65 +10,65 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
-    padding: 10px 0;
+    background-color: #333;
+    padding: 10px 20px;
     text-align: center;
     box-shadow: 0px 4px 2px -2px gray;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    color: white;
 }
 
 /* Botón menú hamburguesa */
 #menu-btn {
     font-size: 24px;
-    background: none;
+    background: #007BFF;
+    color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Menú lateral */
-nav {
+#sidebar {
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -250px; /* Oculto por defecto */
     width: 250px;
     height: 100%;
-    background-color: #333;
+    background-color: #222;
     padding-top: 60px;
     transition: left 0.3s ease;
 }
 
-nav ul {
+#sidebar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    padding: 10px;
+#sidebar ul li {
+    padding: 15px;
     text-align: center;
 }
 
-nav ul li a {
+#sidebar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     display: block;
 }
 
-nav ul li a:hover {
+#sidebar ul li a:hover {
     background-color: #575757;
 }
 
 /* Clases para mostrar/ocultar el menú */
-.hidden {
-    left: -250px;
-}
-
-.visible {
-    left: 0;
+.sidebar-visible {
+    left: 0 !important;
 }
 
 /* Ajuste del contenido para que no quede tapado */
@@ -77,14 +77,6 @@ main {
     padding: 20px;
 }
 
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 button:hover {
     background: #0056b3;
