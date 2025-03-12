@@ -1,25 +1,79 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Header fijo */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Color de fondo */
+    background-color: #f8f9fa;
     padding: 10px 0;
     text-align: center;
-    box-shadow: 0px 4px 2px -2px gray; /* Sombra para destacar */
-    z-index: 1000; /* Para asegurarse de que quede por encima del contenido */
+    box-shadow: 0px 4px 2px -2px gray;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
+/* Botón menú hamburguesa */
+#menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menú lateral */
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Clases para mostrar/ocultar el menú */
+.hidden {
+    left: -250px;
+}
+
+.visible {
+    left: 0;
+}
+
+/* Ajuste del contenido para que no quede tapado */
 main {
-    margin: 20px;
+    margin-top: 60px;
     padding: 20px;
 }
 
