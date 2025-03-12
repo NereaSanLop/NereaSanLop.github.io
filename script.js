@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.getElementById("menu-btn");
     const sidebar = document.getElementById("sidebar");
 
@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", function () {
             sidebar.classList.add("sidebar-visible");
         }
     });
-});
+});*/
